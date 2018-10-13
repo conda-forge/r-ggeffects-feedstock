@@ -36,7 +36,7 @@ requirements:
     - r-scales
     - r-sjlabelled >=1.0.11
     - r-sjmisc >=2.7.2
-    - r-sjstats >=0.15.0
+    - r-sjstats >=0.17.1
     - r-tibble >=1.3.3
     - r-tidyr >=0.7.0
     - r-tidyselect
@@ -52,10 +52,11 @@ requirements:
     - r-scales
     - r-sjlabelled >=1.0.11
     - r-sjmisc >=2.7.2
-    - r-sjstats >=0.15.0
+    - r-sjstats >=0.17.1
     - r-tibble >=1.3.3
     - r-tidyr >=0.7.0
     - r-tidyselect
+
 
 test:
   commands:
