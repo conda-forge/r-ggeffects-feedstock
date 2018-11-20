@@ -15,9 +15,9 @@ source:
   sha256: a76b3c60857f123f2197dfc7644a11599443e367f2f20d6c35b9b6151b3960a9
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -73,8 +73,7 @@ about:
     wrapper-functions especially for polynomials or interactions. There is a generic
     plot()-method to plot the results using 'ggplot2'. 
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
