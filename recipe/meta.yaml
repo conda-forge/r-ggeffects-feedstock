@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 {% set cran_mirror = 'https://cran.r-project.org' %}
@@ -12,7 +12,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggeffects_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggeffects/ggeffects_{{ version }}.tar.gz
-  sha256: a76b3c60857f123f2197dfc7644a11599443e367f2f20d6c35b9b6151b3960a9
+  sha256: c1d4fbcf02190faa04a7ad8862c84e545c173c20fe7fdace0f27d4229bf25d94
 
 build:
   noarch: generic
