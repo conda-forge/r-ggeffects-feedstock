@@ -26,35 +26,25 @@ requirements:
   host:
     - r-base
     - r-mass
-    - r-crayon
     - r-dplyr
-    - r-ggplot2
-    - r-lme4
+    - r-insight
     - r-magrittr
-    - r-prediction
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.0.14
-    - r-sjmisc >=2.7.6
-    - r-sjstats >=0.17.3
-    - r-tidyr
+    - r-sjlabelled >=1.0.17
+    - r-sjmisc >=2.7.8
   run:
     - r-base
     - r-mass
-    - r-crayon
     - r-dplyr
-    - r-ggplot2
-    - r-lme4
+    - r-insight
     - r-magrittr
-    - r-prediction
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.0.14
-    - r-sjmisc >=2.7.6
-    - r-sjstats >=0.17.3
-    - r-tidyr
+    - r-sjlabelled >=1.0.17
+    - r-sjmisc >=2.7.8
 
 test:
   commands:
