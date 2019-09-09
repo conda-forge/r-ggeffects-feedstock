@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = '0.12.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggeffects_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggeffects/ggeffects_{{ version }}.tar.gz
-  sha256: b1ee7416445e19a6d07a142356ee819b4a9869a0f89e490934b049ba90ea14ac
+  sha256: b783ac06b7df706cc97280b600670ca06dc95c8775c574ddf4fe153025f3ae45
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -27,24 +27,24 @@ requirements:
     - r-base
     - r-mass
     - r-dplyr
-    - r-insight
+    - r-insight >=0.4.1
     - r-magrittr
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.0.17
-    - r-sjmisc >=2.7.8
+    - r-sjlabelled >=1.1.0
+    - r-sjmisc >=2.8.0
   run:
     - r-base
     - r-mass
     - r-dplyr
-    - r-insight
+    - r-insight >=0.4.1
     - r-magrittr
     - r-purrr
     - r-rlang
     - r-scales
-    - r-sjlabelled >=1.0.17
-    - r-sjmisc >=2.7.8
+    - r-sjlabelled >=1.1.0
+    - r-sjmisc >=2.8.0
 
 test:
   commands:
@@ -60,7 +60,8 @@ about:
     and polynomial terms are also supported.  The main functions are ggpredict(), ggemmeans()
     and ggeffect(). There is a  generic plot()-method to plot the results using 'ggplot2'.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
@@ -71,21 +72,21 @@ extra:
 # Type: Package
 # Encoding: UTF-8
 # Title: Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs
-# Version: 0.8.0
-# Date: 2019-01-09
+# Version: 0.12.0
+# Date: 2019-09-03
 # Authors@R: person("Daniel", "Ludecke", role = c("aut", "cre"), email = "d.luedecke@uke.de", comment = c(ORCID = "0000-0002-8895-3206"))
 # Maintainer: Daniel Ludecke <d.luedecke@uke.de>
 # Description: Compute marginal effects from statistical models and returns the  result as tidy data frames. These data frames are ready to use with the  'ggplot2'-package. Marginal effects can be calculated for many different  models. Interaction terms, splines and polynomial terms are also supported.  The main functions are ggpredict(), ggemmeans() and ggeffect(). There is a  generic plot()-method to plot the results using 'ggplot2'.
 # License: GPL-3
 # Depends: R (>= 3.2), graphics, stats, utils
-# Imports: crayon, dplyr, ggplot2, lme4, magrittr, MASS, prediction, purrr, rlang, scales, sjlabelled (>= 1.0.14), sjmisc (>= 2.7.6), sjstats (>= 0.17.3), tidyr
-# Suggests: brms, effects (>= 4.0-0), emmeans, glmmTMB, knitr, nlme, pscl, rmarkdown, rstanarm, rstantools, sandwich, survey, survival, testthat
+# Imports: dplyr, insight (>= 0.4.1), magrittr, MASS, purrr, rlang, scales, sjlabelled (>= 1.1.0), sjmisc (>= 2.8.0)
+# Suggests: AER, aod, betareg, brms, effects (>= 4.1-0), emmeans, gam, gamm4, gee, geepack, ggplot2, GLMMadaptive, glmmTMB, httr, knitr, lme4, logistf, Matrix, MCMCglmm, mgcv, nlme, ordinal, prediction, pscl, quantreg, rmarkdown, rms, robust, robustbase, rstanarm, rstantools, sandwich, see, sjstats, survey, survival, testthat, VGAM
 # URL: https://strengejacke.github.io/ggeffects
 # BugReports: https://github.com/strengejacke/ggeffects/issues
 # RoxygenNote: 6.1.1
 # VignetteBuilder: knitr
 # NeedsCompilation: no
-# Packaged: 2019-01-09 15:13:11 UTC; Daniel
+# Packaged: 2019-09-03 09:07:34 UTC; mail
 # Author: Daniel Ludecke [aut, cre] (<https://orcid.org/0000-0002-8895-3206>)
 # Repository: CRAN
-# Date/Publication: 2019-01-09 16:20:03 UTC
+# Date/Publication: 2019-09-03 13:40:03 UTC
