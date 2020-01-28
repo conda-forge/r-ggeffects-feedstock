@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggeffects_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggeffects/ggeffects_{{ version }}.tar.gz
-  sha256: bc559d699638ff6ce0b01e9a0afdbb97c5482920758b3a8643d020cebb405fb6
+  sha256: a9286f9a6dcab40df0ef50a535b9dc2c441e393b59f2f0bf497779ba51d0fb1e
 
 build:
   merge_build_host: True  # [win]
