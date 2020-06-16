@@ -1,4 +1,4 @@
-{% set version = "0.14.3" %}
+{% set version = "0.15.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggeffects_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggeffects/ggeffects_{{ version }}.tar.gz
-  sha256: 4d9bf6fd834acd2f924b742a669f2a7b279b622096e84d16fd764a28df02e81a
+  sha256: f9f03da87b5d3f0188a55f81426e5844387742505bf107f6906c285a385c1baf
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,9 +54,8 @@ test:
 about:
   home: https://strengejacke.github.io/ggeffects
   license: GPL-3
-  summary: Compute marginal effects from statistical models and returns the  result as tidy data frames. These data frames are ready to use with the  'ggplot2'-package.
-    Marginal effects can be calculated for many different  models. Interaction terms, splines and polynomial terms are also supported.  The main functions are ggpredict(),
-    ggemmeans() and ggeffect(). There is a  generic plot()-method to plot the results using 'ggplot2'.
+  summary: Compute marginal effects from statistical models and returns the  result as tidy data frames. These data frames are ready to use with the  'ggplot2'-package. Marginal effects can be calculated for many different  models. Interaction terms, splines and polynomial terms are also supported.  The main functions are
+    ggpredict(), ggemmeans() and ggeffect(). There is a  generic plot()-method to plot the results using 'ggplot2'.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
