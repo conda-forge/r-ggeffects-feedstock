@@ -5,7 +5,7 @@ Home: https://strengejacke.github.io/ggeffects
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Compute marginal effects from statistical models and returns the  result as tidy data frames. These data frames are ready to use with the  'ggplot2'-package. Marginal effects can be calculated for many different  models. Interaction terms, splines and polynomial terms are also supported.  The main functions are ggpredict(), ggemmeans() and ggeffect(). There is a  generic plot()-method to plot the results using 'ggplot2'.
 
