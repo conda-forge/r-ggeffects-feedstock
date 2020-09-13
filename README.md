@@ -3,7 +3,7 @@ About r-ggeffects
 
 Home: https://strengejacke.github.io/ggeffects
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: BSD-3-Clause
 
