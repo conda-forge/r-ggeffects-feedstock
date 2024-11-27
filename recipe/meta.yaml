@@ -1,4 +1,4 @@
-{% set version = "1.7.2" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggeffects_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggeffects/ggeffects_{{ version }}.tar.gz
-  sha256: 2c723e98e913e77ee457bd31702e96c563d4a57e58b868ec6a72a2b774ad7997
+  sha256: 48eff4b1a0f4deeec507a7a1a99e5aa2a88538af8b8e46b090f36c5de69b530a
 
 build:
   number: 0
